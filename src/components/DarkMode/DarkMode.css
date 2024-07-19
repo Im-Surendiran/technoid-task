@@ -1,0 +1,88 @@
+:root {
+    --body-background: #fff;
+}
+
+[data-theme='light'] {
+    --body-background: #fff;
+}
+
+[data-theme='dark'] {
+    --body-background: #8958c7;
+}
+
+#darkmode-icon {
+    width: 60px;
+    height: 28px;
+    position: relative;
+    display: block;
+    background: #2fb4ee;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0, 4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#darkmode-icon::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#darkmode-toggle {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#darkmode-toggle:checked+#darkmode-icon {
+    background: #242424;
+}
+
+#darkmode-toggle:checked + #darkmode-icon::after {
+    left: 56px;
+    transform: translate(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+#darkmode-icon svg {
+    position: absolute;
+    width: 16px;
+    top: 5px;
+    z-index: 100;
+}
+
+#darkmode-icon svg.sun {
+   left: 6px;
+    fill: #fff;
+    transition: 0.3s;
+}
+
+#darkmode-icon svg.moon {
+    left: 38px;
+    fill: #2fb4ee;
+    transition: 0.3s;
+}
+
+#darkmode-toggle:checked + #darkmode-icon svg.sun {
+    fill: #000;
+    display: block;
+}
+
+#darkmode-toggle:checked + #darkmode-icon svg.moon {
+    fill: #fff;
+    display: block;
+}
+
+
+
+.wrapper {
+    background-color: var(--body-background);
+    height: 100%;
+    width: 100%;
+}

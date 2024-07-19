@@ -1,0 +1,14 @@
+{
+    "english":{
+        "language":"English",
+        "Title":"Translate english to Tamil",
+        "Description":"Translate web content into multiple language",
+        "Reply":"Replay The Journey"
+
+    },
+    "Arab":{
+        "language":"عربي",
+        "Title":"ஆங்கிலத்தை தமிழுக்கு மொழிபெயர்க்கவும்",
+        "Reply":"عيد الرحلة من جديد"
+    }
+   }

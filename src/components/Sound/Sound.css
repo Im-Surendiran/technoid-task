@@ -1,0 +1,63 @@
+
+#soundmode-icon {
+    width: 60px;
+    height: 28px;
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 2px solid #6c3caf;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0, 4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#soundmode-icon::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #6c3caf;
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#soundmode-toggle {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#soundmode-toggle:checked+#soundmode-icon::after {
+    left: 56px;
+    transform: translate(-100%);
+    background: #6c3caf;
+    }
+
+#soundmode-icon svg {
+    position: absolute;
+    width: 16px;
+    top: 5px;
+    z-index: 100;
+}
+
+#soundmode-icon svg.mute {
+    left: 6px;
+    fill: #fff;
+    transition: 0.3s;
+}
+
+#soundmode-icon svg.unmute {
+    left: 38px;
+    fill: #868585;
+    transition: 0.3s;
+}
+
+#soundmode-toggle:checked+#soundmode-icon svg.mute {
+    fill: #868585;
+}
+#soundmode-toggle:checked+#soundmode-icon svg.unmute {
+    fill: #ffffff;
+}

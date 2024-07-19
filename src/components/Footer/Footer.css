@@ -1,0 +1,127 @@
+[data-theme='light'] {
+    --btn-bg: #8958c7;
+    --btn-col: #ffffff;
+    --btn-hov-bg: #ffc836;
+    --btn-hov-col: #000;
+}
+
+[data-theme='dark'] {
+    --btn-bg: #ffc836;
+    --btn-col: #000;
+    --btn-hov-bg: #fff;
+    --btn-hov-col: #000;
+}
+
+footer.footerMain {
+    padding: 50px 0 80px;
+}
+
+footer.footerMain .btnWrap {
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.btn.btn-primary {
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.btn-primary {
+    background: var(--btn-bg);
+    color: var(--btn-col);
+    box-shadow: -1px 0 25px -8px #ffc836;
+    transition: background-color .25s ease, color .25s ease, box-shadow .25s ease;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: var(--btn-hov-bg);
+    ;
+    color: var(--btn-hov-col);
+}
+
+footer.footerMain .footerLogo {
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0 0 70px;
+    width: 100%;
+}
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 70px;
+}
+
+.flogo-container {
+    display: flex;
+    align-items: center;
+}
+
+.flogo {
+    max-width: 200px;
+    /* Adjust maximum width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.fdivider {
+    width: 2px;
+    height: 80px;
+    /* Adjust height as needed */
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+.overlayFooter {
+    max-width: 100%;
+    height: 189px;
+    background: url(https://gea-eid-p2.stocker.team/static/media/footerGreen.fd2477c70ed59090097f.png) left top/contain no-repeat content-box,
+        url(https://gea-eid-p2.stocker.team/static/media/footerOrange.10f54cb717f7471f7906.png) left bottom/contain no-repeat content-box,
+        url(https://gea-eid-p2.stocker.team/static/media/footerPink.7f0186f5758b23f7271d.png) right bottom/contain no-repeat content-box;
+    ;
+}
+
+@media (max-width: 768px) {
+    .fcontainer {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .flogo {
+        max-width: 100px;
+        /* Adjust maximum width as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .fdivider {
+        width: 1px;
+        height: 60px;
+        margin: 20px 10;
+    }
+
+    .overlayFooter {
+        max-width: 100%;
+        height: 189px;
+        background: url(https://gea-eid-p2.stocker.team/static/media/footerGreen.fd2477c70ed59090097f.png) left bottom/contain no-repeat content-box,
+            url(https://gea-eid-p2.stocker.team/static/media/footerOrange.10f54cb717f7471f7906.png) right bottom/contain no-repeat content-box,
+            url(https://gea-eid-p2.stocker.team/static/media/footerPink.7f0186f5758b23f7271d.png) right bottom/contain no-repeat content-box;
+        ;
+    }
+}

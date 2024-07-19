@@ -1,0 +1,104 @@
+[data-theme='light'] {
+    --nav-background: url(https://gea-eid-p2.stocker.team/static/media/nav-bg.ab1ac9cb33f668303066.png);
+    --nav-img-size: 421px;
+    --nav-bg: #ffffff;
+}
+
+[data-theme='dark'] {
+    --nav-background: url(https://gea-eid-p2.stocker.team/static/media/nightOverlay.8d73d967be2b8afb26bf.png);
+    --nav-img-size: 228px;
+    --nav-bg: #6c3caf;
+}
+
+.header {
+    height: var(--nav-img-size);
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-img-size);
+    background-image: var(--nav-background);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+     height: fit-content;
+    padding: 2%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 96%;
+    z-index: 1000;
+  }
+
+.center img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-space {
+    padding: 0px 10px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        z-index: 1000;
+        height: 228px;
+    }
+    
+    .header-container {
+        padding: 14%;
+        background-color: var(--nav-bg);
+        align-items: center;
+    }
+
+    .overlay {
+        top: 60px;
+        height: var(--nav-img-size);
+        background-size: contain;
+        background-position: top;
+    }
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        /* Stacks buttons vertically on small screens */
+    }
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.center img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
