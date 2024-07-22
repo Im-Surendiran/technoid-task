@@ -16,7 +16,7 @@
 .happiness {
     align-items: center;
     height: 100vh;
-    padding: 0;
+    padding: 150px 0px;
     position: relative;
     width: 100%;
     z-index: 9;

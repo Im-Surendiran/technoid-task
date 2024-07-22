@@ -130,7 +130,7 @@
     .hero .hero-left-img .hero-cup-image .intro-cup {
         bottom: 30%;
         position: absolute;
-        right: 32%;
+        right: 25%;
         width: 13%;
         z-index: 9;
      }
@@ -140,7 +140,7 @@
 
     @media only screen and (max-width: 1440px) {  
         .hero .hero-right-img .hero-jug-image .jug {
-            left: 36%;
+            left: 25%;
             width: 14%;
         }
         
