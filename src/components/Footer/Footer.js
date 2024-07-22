@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
-import Translations from '../../Data/data.json'
 import Logo from '../../assets/logo/logo.png';
 import './Footer.css'
 const Footer = () => {

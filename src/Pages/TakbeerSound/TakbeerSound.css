@@ -1,0 +1,204 @@
+[data-theme='dark'] {
+    --light-img: none;
+    --dark-img: block;
+    --text-col: #ffffff;
+}
+
+[data-theme='light'] {
+    --light-img: block;
+    --dark-img: none;
+    --text-col: #000000;
+}
+
+.takbeerDark {
+    display: var(--dark-img);
+}
+
+.takbeerLight {
+    display: var(--light-img);
+}
+
+section.aud {
+    position: relative;
+}
+
+section.aud .aud-container {
+    padding: 50px 10px 100px;
+}
+
+section.aud .aud-container .shine-bottom {
+    left: 43%;
+    position: absolute;
+    top: -10%;
+    width: 5%;
+}
+
+section.aud .aud-container .shine-bottom img {
+    width: 100%;
+}
+
+section.aud .aud-container .takbeer-img .takbeer-text {
+    position: absolute;
+    top: 10%;
+    width: -25%;
+    width: 20%;
+}
+
+section.aud .aud-container .takbeer-img .takbeer-text img {
+    width: 100%;
+}
+
+section.aud .aud-container .aud-left-img .oud-pink-ballon {
+    left: 7%;
+    position: absolute;
+    top: 4%;
+    width: 10%;
+}
+
+section.aud .aud-container .aud-left-img .oud-pink-ballon img {
+    width: 100%;
+}
+
+section.aud .aud-intro-content {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+section.aud .aud-intro-content .section-box {
+    margin: auto;
+    max-width: 500px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+section.aud .aud-intro-content .section-box {
+    color: var(--text-col);
+}
+
+section.aud .aud-bottom-elements .oud-green-ballon {
+    bottom: -10%;
+    position: absolute;
+    left: 4%;
+    width: 14%;
+}
+
+section.aud .aud-bottom-elements .oud-green-ballon img {
+    width: 100%;
+}
+
+section.aud .aud-bottom-elements .waves .aud-orange {
+    bottom: -4.5rem;
+    position: absolute;
+    right: -31%;
+    width: 68%;
+}
+
+section.aud .aud-bottom-elements .waves .aud-orange img {
+    width: 100%;
+}
+
+section.aud .aud-container .takbeer-img .takbeer-text {
+    top: -10%;
+    position: absolute;
+    right: 10%;
+    transform: rotate(40deg);
+    width: 20%;
+}
+
+.ButtonSection {
+    padding: 60px 0;
+    position: relative;
+}
+
+.ButtonSection .ButtonContainer {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.ButtonSection .ButtonContainer .buttonsectionWrap .btn.btn-primary {
+    padding: 10px 0;
+    width: 48%;
+}
+.ButtonSection .ButtonContainer .buttonsectionWrap {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.ButtonSection .ButtonContainer .buttonsectionWrap .btn.btn-primary {
+    align-items: center;
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px;
+    padding: 15px 0;
+    text-align: center;
+    width: 23%;
+}
+@media only screen and (max-width: 500px) {
+    section.aud .aud-container {
+        padding: 40px 10px 20px;
+    }
+
+    .ButtonSection {
+        padding: 60px 0 25%;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    section.aud .aud-container .shine-bottom {
+        width: 12%;
+    }
+
+    section.aud .aud-container .takbeer-img .takbeer-text {
+        width: 25%;
+    }
+
+    section.aud .aud-container .aud-left-img .oud-pink-ballon {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    section.aud .aud-intro-content {
+        margin: 1% auto;
+        width: 80%;
+    }
+
+    section.aud .aud-intro-content .section-box {
+        max-width: 100%;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .section-box p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    section.aud .aud-container .shine-bottom {
+        width: 10%;
+    }
+
+    section.aud .aud-container .takbeer-img .takbeer-text {
+        width: 22%;
+    }
+
+    .ButtonSection .ButtonContainer .buttonsectionWrap .btn.btn-primary {
+        padding: 10px 0;
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .ButtonSection .ButtonContainer {
+        max-width: 80%;
+    }
+}

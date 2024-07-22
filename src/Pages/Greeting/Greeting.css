@@ -1,0 +1,114 @@
+section.family {
+    padding: 20% 0px 25% 0px;
+    width: 100vw;
+    position: relative;
+}
+.greetingSection .greetingSectionContainer {
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingCards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingCards .greetingElements01 {
+    width: 21%;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingCards .greetingElements01 {
+    border: 1.5px solid #8a59c8;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingCards img {
+    border-radius: 20px;
+}
+.greetingSection .greetingSectionContainer .greetingElements img {
+    width: 100%;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingCards .greetingElements02 {
+    width: 21%;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingCards .greetingElements01 {
+    border: 1.5px solid #f5c547;
+    border-radius: 20px;
+}
+
+.greetingSection .greetingSectionContainer .greetingElements .greetingElements08 {
+    display: flex;
+    position: absolute;
+    left: 22%;
+    top: 3%;
+    width: 7%;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingElements03 {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    width: 13%;
+}
+.greetingSection .greetingSectionContainer .greetingElements .greetingElements09 {
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    width: 11%;
+}
+.greetingSection .greetingSectionContainer .section-box {
+ margin:0 auto;
+max-width: 700px;
+position: relative;
+text-align: center;
+width: 100%;
+}
+.greetingSection .greetingSectionContainer .section-box h2 {
+    color: #eb436f;
+    padding-top: 15%;
+}
+
+.section-box h2 {
+     font-weight: 600;
+}
+.greetingSection .greetingSectionContainer .section-box p {
+    color: #000000;
+}
+.section-box p {
+     font-weight: 300;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.greetingSection .greetingSectionContainer .section-box .btnWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+     margin-top: 40px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1366px) {
+    .greetingSection .greetingSectionContainer {
+        padding: 50px 0 50px;
+    }
+    .greetingSection .greetingSectionContainer .section-box {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .greetingSection .greetingSectionContainer .section-box .btnWrap {
+        flex-flow: column;
+    }
+    .greetingSection .greetingSectionContainer .section-box .btnWrap {
+        margin: 7px 0;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .greetingSection .greetingSectionContainer .section-box .btnWrap .btn.btn-primary {
+        display: block;
+        width: 40%;
+        margin: 7px 0;
+        padding: 10px 0;
+        width: 100%;
+    }
+    
+}

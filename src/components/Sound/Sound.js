@@ -4,20 +4,15 @@ import './Sound.css'
 const Sound = () => {
     const [soundMode, setSoundMode] = useState(true);
     const [isPlay, setIsPlay] = useState(0);
-    const nature = new Audio(Music);
+   const [audio, setAudio] = useState(new Audio(Music))
     const switchSound = async () => {
         setSoundMode(!soundMode);
-        
-        console.log(soundMode)
-
-        if (!soundMode) {
-            nature.pause()
-            console.log(isPlay,'yes');
-        }
+        if (soundMode) {
+            audio.play()  
+            }
         else {
-            nature.play()
-            console.log(isPlay ,'no');
-        }
+            audio.pause()
+         }
 
     }
 

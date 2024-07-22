@@ -78,11 +78,9 @@
     fill: #fff;
     display: block;
 }
-
-
-
 .wrapper {
     background-color: var(--body-background);
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }

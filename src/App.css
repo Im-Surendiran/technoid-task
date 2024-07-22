@@ -64,3 +64,6 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
+.img-fit {
+  max-width: 100%;
+}
