@@ -1,3 +1,13 @@
+[data-theme='light'] {
+    --text-col: #ffffff;
+    --title-col:#eb436f;
+}
+
+[data-theme='dark'] {
+    --text-col: #000000;
+    --title-col:#87ec6c;
+}
+
 section.family {
     padding: 20% 0px 25% 0px;
     width: 100vw;
@@ -61,7 +71,7 @@ text-align: center;
 width: 100%;
 }
 .greetingSection .greetingSectionContainer .section-box h2 {
-    color: #eb436f;
+    color:var(--title-col) ;
     padding-top: 15%;
 }
 
@@ -69,7 +79,7 @@ width: 100%;
      font-weight: 600;
 }
 .greetingSection .greetingSectionContainer .section-box p {
-    color: #000000;
+    color: var(--text-col);
 }
 .section-box p {
      font-weight: 300;
